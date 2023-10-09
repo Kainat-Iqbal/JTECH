@@ -28,9 +28,10 @@
 			<div id="landingText">
 				<h1>JTECH 2024</h1>
 				<h2>Inspiring Women in Technology</h2>
+				<a href="#Registeration" style="color:white;text-align:center;">
 				<div id="ticket">
 					<p>Get Your Ticket</p>
-				</div>
+				</div></a>
 			</div>
 			<div id="mainBottomBottom">
 				<div id="location">

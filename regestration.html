@@ -51,6 +51,30 @@
             margin-top: -2.5%;
             width: 100vw;
             height: 80vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        #registerForm{
+            width: 40vw;
+            height: 75vh;
+            background-color: #6041726e;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #registerForm input{
+            height: 7vh;
+            width: 40vw;
+            margin-top: 2vh;
+            border: none;
+        }
+
+        #registerBtn{
+            margin-left: 30%;
+            height: 7vh;
+            background-color: #601472;
+            color: white;
         }
 
     </style>
@@ -61,10 +85,21 @@
         <div id="registerHeader">
         </div>
         <div id="registerBox">
-            <h2>Contact Us</h2>
+            <h2>Registration</h2>
         </div>
         <div id="registerBody">
-            
+            <div id="registerForm">
+                <form>
+                    <input placeholder="* Full Name"><br>
+                    <input placeholder="* CNIC"><br>
+                    <input placeholder="* Organization"><br>
+                    <input placeholder="* Designation"><br>
+                    <input placeholder="* Experience"><br>
+                    <input placeholder="* Email Adderss"><br>
+                    <input placeholder="* Contact Number">
+                    <input type="submit" value="Register" id="registerBtn" style="width: 15vw;">
+                </form>
+            </div>
         </div>
     </div>
 
