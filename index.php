@@ -53,7 +53,7 @@
 					</div>
 					<div id="dateText"
 					style="margin-left:15px;margin-bottom:26px">
-						<p>01 Feburary 2024</p>
+						<p>Feburary 2024</p>
 					</div>
 					
 				</div>
