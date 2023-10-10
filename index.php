@@ -59,8 +59,8 @@
 				</div>
 
 				<div id="timer" style="display:flex;">
-					<i class="material-icons" style="margin-top:4vh;font-size: 40px; width: 30px;">schedule</i>
-					<p id="timerP" style="margin-top:4vh;margin-left:15px;margin-bottom:32px">00 00 00 00</p>
+					<i class="material-icons" style="margin-top:1.5vh;font-size: 40px; width: 30px;">schedule</i>
+					<p id="timerP" style="margin-top:2.5vh;margin-left:15px;margin-bottom:32px">00 00 00 00</p>
 				</div>
 			</div>
 		</div>
