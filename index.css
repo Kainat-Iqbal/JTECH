@@ -70,8 +70,7 @@ color: white;
 #locationText {
 	width: 25vw;
 	height: 20vh;
-	/* 	background-color: rebeccapurple;
- */
+	/* 	background-color: rebeccapurple;*/
 	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
@@ -91,7 +90,7 @@ color: white;
 #timer {
 	width: 20vw;
 	height: 20vh;
-	background-color: bisque;
+	/* background-color: bisque; */
 	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
