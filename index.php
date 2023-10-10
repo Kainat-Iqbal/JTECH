@@ -25,37 +25,49 @@
 		<?php include 'nav.html' ?>
 		</div>
 		<div id="mainBottom">
-			<div id="landingText">
-				<h1>JTECH 2024</h1>
-				<h2>Inspiring Women in Technology</h2>
+			<div id="landingText" style="width:auto;margin-top: 15vh;margin-bottom:7vh;">
+				<h1 style="font-size: 5rem;">JTECH 2024</h1>
+				<h2 style="font-size: 3.5rem;">Inspiring Women in Technology</h2>
+				<h3 style="font-size: 2.5rem;">Department of Computer Science & Software Engineering</h3>
+				<h4 style="font-size: 2rem;">Jinnah University for Women</h4>
 				<a href="#Registeration" style="color:white;text-align:center;">
-				<div id="ticket">
+				<div id="ticket" style="border: 5px solid white;margin-top: 2vh;">
 					<p>Get Your Ticket</p>
 				</div></a>
 			</div>
 			<div id="mainBottomBottom">
-				<div id="location">
+			<div id="location">
 					<div id="locationIcon">
 						<i class="material-icons"
-							style="margin-left: 30px; margin-top: 45px; font-size: 40px; width: 30px;">place</i>
+							style="margin-left: 30px; margin-top: 25px; font-size: 40px; width: 30px;">place</i>
 					</div>
 					<div id="locationText">
 						<p>5C, Block 5 Nazimabad, Karachi, Pakistan</p>
 					</div>
-				</div>
+			</div>
+
 				<div id="date">
 					<div id="dateIcon">
-
+					<i class="material-icons"
+							style="margin-bottom: 35px; font-size: 40px; width: 30px;">calendar_month</i>
 					</div>
-					<div id="dateText">
-						<p>30 Jan 2024</p>
+					<div id="dateText"
+					style="margin-left:15px;margin-bottom:26px">
+						<p>01 Feburary 2024</p>
 					</div>
+					
 				</div>
-				<div id="timer">
-					<p id="timerP">00 00 00 00</p>
+
+				<div id="timer" style="display:flex;">
+					<i class="material-icons" style="margin-top:4vh;font-size: 40px; width: 30px;">schedule</i>
+					<p id="timerP" style="margin-top:4vh;margin-left:15px;margin-bottom:32px">00 00 00 00</p>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="AboutUs">
+		<?php include 'about.html' ?>
 	</div>
 
 	<div id="Team">
@@ -74,6 +86,9 @@
 		<?php include 'contact.html' ?>
 	</div>
 
+	<div id="Footer">
+		<?php include 'footer.html' ?>
+	</div>
 </body>
 
 </html>

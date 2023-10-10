@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+    <style>
+		 #mainAbout{
+            width: 100%;
+            height: 100%;
+            background-image: url('images/mainBackground.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            color: #256299;
+        }
+		#aboutHeader {
+            background-color: rgba(255, 255, 255, 0.199);
+            height: 25vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+		#aboutBox {
+            width: 20vw;
+            height: 10%;
+            margin-top: -2.5%;
+            background-color: white;
+            border: 3px solid #256299;
+            margin-left: 8%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+		#aboutBody {
+			background-color:rgba(255, 255, 255, 0.658);
+            margin-top: -2.5%;
+            width: 100vw;
+			
+        }
+		#About {
+            margin-top: 5%;
+			height:60vh;
+        }
+		
+        .about-content .card {
+            padding: 1%;
+            border-radius: 0;
+            border-left: 10px solid #73276f;
+            transition: 1s ease;
+            background: linear-gradient(to right, #73276f 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            font-family: 'montserrat', sans-serif;
+            color: #646464;
+            width: 92%;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        .about-content * {
+            margin: auto;
+        }
+
+        .about-content .card:hover {
+            background-position: left bottom;
+            color: white;
+        }
+
+        .about-content .card i {
+            font-size: 500%;
+            color: #73276f;
+        }
+
+        .about-content .card .info-label {
+            font-size: 150%;
+            font-weight: bold;
+            margin-top: 2%;
+        }
+
+        .about-content .card .info {
+            font-size: 100%;
+            margin-top: 2%;
+        }
+        .about-content .card:hover i {
+            color: white;
+        }
+		
+		.about-section {
+  			display: flex;
+  			justify-content: space-between;
+  			height:15vh;
+			background-color: #73276f;
+  			font-family: 'Times New Roman', Times, serif; 
+  			padding-left:100px;
+  			padding-right:100px;
+  			color:white;
+		}
+
+		.about-stat {
+  			display: flex;
+  			align-items: center;
+		}
+
+		.stat-number {
+  			font-size: 40px;
+  			font-weight: bold;
+  			margin-right: 10px; 
+		}
+
+		.vertical-line {
+  			width: 2px;
+  			height: 35px; 
+  			background-color: white; 
+  			margin: 0 10px; 
+		}
+
+		.stat-description {
+  			font-size: 40px;
+		}
+    </style>
+</head>
+<body>
+    <div id="mainAbout">
+        <div id="aboutHeader">
+      </div>
+      <div id="aboutBox">
+          <h2>About Us</h2>
+      </div>
+      <div id="aboutBody">
+              <div class="about" id="About">
+                  <div class="about-content">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                  <div class="card">
+                                      <div class="card-container">
+                                      <i class="fas fa-question-circle"></i>
+                                          <div class="info-label">
+                                          WHAT'S JTECH?
+                                          </div>
+                                          <div class="info">
+                                          JTECH is a technology extravaganza where students of JUW exhibit their final year projects and innovative ideas for business start up. The projects and ideas are based on cutting-edge technologies like Blockchain, Artificial Intelligence, Virtual Reality etc.
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                  <div class="card">
+                                      <div class="card-container">
+                                          <i class="fas fa-bullseye"></i>
+                                          <div class="info-label">
+                                          OUR VISION
+                                          </div>
+                                          <div class="info">
+                                          The vision behind organizing an event of this calibre is to encourage women and enable them to meet professionals from the industry and portray their projects on a public platform that speaks of their dedication, creativity and technical abilities.
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                  <div class="card">
+                                      <div class="card-container">
+                                          <i class="fa fa-university"></i>
+                                          <div class="info-label">
+                                          ORGANIZED BY
+                                          </div>
+                                          <div class="info">
+                                          JTECH event is organized by the department of Computer Science and Software Engineering at Jinnah University for Women in Karachi. The event is organized on yearly basis with the collaboration of faculty and volunteering students.
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="about-section">
+                    <div class="about-stat">
+                      <span class="stat-number">17+</span>
+                      <span class="vertical-line"></span>
+                      <span class="stat-description">Years</span>
+                    </div>
+                    <div class="about-stat">
+                      <span class="stat-number">800+</span>
+                      <span class="vertical-line"></span>
+                      <span class="stat-description">Projects</span>
+                    </div>
+                    <div class="about-stat">
+                      <span class="stat-number">7000+</span>
+                      <span class="vertical-line"></span>
+                      <span class="stat-description">Students</span>
+                    </div>
+              </div>
+          </div>
+      </div>
+</body>
+</html>
