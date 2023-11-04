@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title></title>
+    <style>
+        #mainReview {
+            width: 100vw;
+            height: 100%;
+            background-image: url('images/mainBackground.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            color: #601472;
+            @media (0<width<600px) {
+                height: auto;
+            }
+        }
+
+        #reviewHeader {
+            background-color: rgba(255, 255, 255, 0.199);
+            height: 25vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
+        }
+
+        #reviewBox {
+            width: 20vw;
+            height: 10%;
+            margin-top: -2.5%;
+            background-color: white;
+            border: 3px solid #256299;
+            margin-left: 8%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (0<width<600px) {
+                width: 40vw;
+                margin-top: -8%;
+            }
+        }
+
+        #reviewBody {
+            background-color: rgba(255, 255, 255, 0.658);
+            margin-top: -2.5%;
+            width: 100vw;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (0<width<600px) {
+                background-color: yellow;
+                flex-wrap: wrap;
+            }
+        }
+        #reviewCard{
+            width: 85%;
+            height: auto;
+            margin-top: 10vh;
+            display: flex;
+            justify-content: space-between;
+            @media (0<width<600px) {
+                flex-wrap: wrap;
+            }
+        }
+
+        .oddCard{
+            @media (0<width<600px) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .evenCard{
+            @media (0<width<600px) {
+                flex-direction: column;
+            }
+        }
+
+        #RcardText{
+            width: 60%;
+            height: auto;
+            text-align: justify;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (0<width<600px) {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        #RcardText h4{
+            @media (0<width<600px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        #RcardText h2{
+            @media (0<width<600px) {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }            
+        }
+
+        #RcardImg{
+            width: 45%;
+            @media (0<width<600px) {
+                width: 90vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainReview">
+        <div id="reviewHeader">
+        </div>
+        <div id="reviewBox">
+            <h2>Reviews</h2>
+        </div>
+        <div id="reviewBody">
+            <div id="reviewCard" class="oddCard">
+                <div id="RcardText" style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;">
+                    <h4><i>
+                        "I am delighted to see how my nation's daughters have contributed to technological advancement; I recognise many future leaders, entrepreneurs, and innovators. I'm here to talk about Kamyab Jawan, which is a fantastic resource for giving students access to high-tech skills like web design, mobile application development, artificial intelligence (AI), big data, high security, video production, and more on high-end scholarships. This is my vow to provide scholarships to this university's brilliant and worthy students. I find it quite impressive to see so many talented ladies working together. I'm happy I went to this university. Thank You."
+                    </i></h4>
+                    <h2>
+                        Former Chairman of the Prime Minister’s Youth Programme of Government of Pakistan
+                    </h2>
+                </div>
+                <div id="rcardImg">
+                    <img src="images/review1.jpg" style="height: 40vh;border: 4px solid #601472;">
+                </div>
+            </div>
+
+            <div id="reviewCard" class="evenCard">
+                <div id="rcardImg">
+                    <img src="images/review2.jpg" style="height: 50vh;width: 30vw;border: 4px solid #601472;">
+                </div>
+                <div id="RcardText" style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;">
+                    <h4><i>
+                        "Visiting Jinnah University for Women, getting a chance to be a part of JTECH 2021 was an overwhelming experience. It was a pleasure to see the potential that students and faculty members carry. This university, in my opinion, is doing an outstanding job in guiding the students. The ideas presented were real-world examples addressing real-world issues, which was incredible. The student's enthusiasm for the ideas and projects, as well as their attachment to them, made me happy. "
+                    </i></h4>
+                    <h2>
+                        <br>
+                        Shahzad Shahid, President of TPS Pakistan.
+                    </h2>
+                </div>
+                
+            </div>   
+            
+            <div id="reviewCard" class="oddCard">
+                <div id="RcardText" style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;">
+                    <h4><i>
+                        "Such a pleasure to be the Chief Guest at JTECH 2020 at Jinnah University for Women. Checked out many of the Final Year Projects that the young women had worked on - a lot of emphasis on solutions for those with hearing difficulties, visual impairment and those suffering from autism. Agritech and Edtech solutions were also areas of focus."
+                    </i></h4>
+                    <h2>
+                        Jehan Ara, President of The Nest i/o and PASHA via Facebook
+                    </h2>
+                </div>
+                <div id="rcardImg">
+                    <img src="images/review3.jpg" style="height: 40vh;width: 30vw;border: 4px solid #601472;">
+                </div>
+            </div>
+
+            <div id="reviewCard" class="evenCard">
+                <div id="rcardImg">
+                    <img src="images/review4.jpg" style="height: 45vh;width: 30vw;border: 4px solid #601472;">
+                </div>
+                <div id="RcardText" >
+                    <h4 style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;"><i>
+                        "Dr. Jawwad Shamsi, professor and director of Karachi campus of FAST-National University of Computer and Emerging Sciences (NUCES), attended JTECH 2019 as chief guest and spoke highly of the students' projects and ideas."
+                    </i></h4>
+                </div>
+                
+            </div>
+
+            <div id="reviewCard" class="oddCard">
+                <div id="RcardText" >
+                    <h4 style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;"><i>
+                        "Dr. Farrukh Iqbal, Executive Director of Institute of Business Administration, also graced the JTECH 2019 event with his presence and appreciated the talent and hardwork of the students."
+                    </i></h4>
+                </div>
+                <div id="rcardImg">
+                    <img src="images/review5.JPG" style="height: 40vh;width: 30vw;border: 4px solid #601472;">
+                </div>
+            </div>
+
+            <div id="reviewCard"  class="evenCard">
+                <div id="rcardImg">
+                    <img src="images/review6.jpg" style="height: 45vh;width: 30vw;border: 4px solid #601472;">
+                </div>
+                <div id="RcardText" >
+                    <h4 style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;"><i>
+                        "Dr. Sarosh Hashmat Lodi, Vice Chancellor of NED University of Engineering & Technology, had also been an esteemed chief guest at Open Day 2018."
+                    </i></h4>
+                </div>
+                
+            </div>
+        </div>
+
+</body>
+
+</html>

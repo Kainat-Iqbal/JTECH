@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <style>
+        #mainTeam {
+            width: 100%;
+            height: 100%;
+            background-image: url('images/mainBackground.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            color: #256299;
+            @media (0<width<600px) {
+                height: auto;
+            }
+        }
+
+        #teamHeader {
+            background-color: rgba(255, 255, 255, 0.199);
+            height: 25vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
+        }
+
+        #teamHeader h1{
+            font-size: 3.5rem;
+
+        }
+
+        #ExecutiveTeamBox{
+            width: 20vw;
+            height: 10%;
+            margin-top: -2.5%;
+            background-color: white;
+            border: 3px solid #256299;
+            margin-left: 8%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (0<width<600px) {
+                width: 60vw;
+                margin-top: -8%;
+            }
+        }
+
+        #teamBody {
+            background-color:rgba(255, 255, 255, 0.658);
+            margin-top: -2.5%;
+            width: 100vw;
+        }
+        #TmainCards{
+            width: 90vw;
+            margin-left: 5vw;
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            @media (0<width<600px) {
+                flex-direction: column;
+                row-gap: 15vw;         
+            }
+        }
+        #Tcard{
+            width: 20%;
+            height: 40vh;
+            margin: 2%;
+        }
+        #Tcard img{
+            width: 100%;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainTeam">
+        <div id="teamHeader">
+            <h1>OUR TEAM</h1>
+        </div>
+        <div id="ExecutiveTeamBox">
+            <h2>Executive Team</h2>
+        </div>
+        <div id="teamBody">
+            <div id="TmainCards">
+                <div id="Tcard">
+                    <img src="images/president.jpeg" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/vp.jpeg" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/co-vp.jpeg" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/graphicDesigner.png" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/webDeveloper1.jpeg" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/webDeveloper2.png" alt="qura">
+                </div>
+                <!-- <div id="Tcard">
+                    <img src="images/qura.jpg" alt="qura">
+                </div>
+                <div id="Tcard">
+                    <img src="images/qura.jpg" alt="qura">
+                </div> -->
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
