@@ -18,6 +18,9 @@
             flex-direction: column;
             font-family: 'Times New Roman', Times, serif;
             color: #601472;
+            @media (0<width<600px) {
+                height: auto;
+            }
         }
 
         #reviewHeader {
@@ -27,6 +30,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
         }
 
         #reviewBox {
@@ -40,6 +46,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                width: 40vw;
+                margin-top: -8%;
+            }
         }
 
         #reviewBody {
@@ -50,6 +60,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (0<width<600px) {
+                flex-wrap: wrap;
+            }
         }
         #reviewCard{
             width: 85%;
@@ -57,21 +70,109 @@
             margin-top: 10vh;
             display: flex;
             justify-content: space-between;
+            @media (0<width<600px) {
+                flex-wrap: wrap;
+            }
         }
+
+        .oddCard{
+            @media (0<width<600px) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .evenCard{
+            @media (0<width<600px) {
+                flex-direction: column;
+            }
+        }
+
         #RcardText{
             width: 60%;
             height: auto;
-            /* background-color: rgba(0, 204, 255, 0.445); */
             text-align: justify;
             padding: 5px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-        #RcardImg{
-            width: 45%;
+            @media (0<width<600px) {
+                width: 100%;
+                text-align: left;
+            }
         }
 
+        #RcardText h4{
+            @media (0<width<600px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        #RcardText h2{
+            @media (0<width<600px) {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }            
+        }
+
+        #RcardImg{
+            width: 45%;
+            @media (0<width<600px) {
+                width: 90vw;
+            }
+        }
+
+        #img1{
+            height: 40vh;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+
+        #img2{
+            height: 50vh;
+            width: 30vw;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+
+        #img3{
+            height: 40vh;
+            width: 30vw;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+
+        #img4{
+            height: 45vh;
+            width: 30vw;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+
+        #img5{
+            height: 40vh;
+            width: 30vw;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
+
+        #img6{
+            height: 45vh;
+            width: 30vw;
+            border: 4px solid #601472;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
+        }
     </style>
 </head>
 
@@ -83,7 +184,7 @@
             <h2>Reviews</h2>
         </div>
         <div id="reviewBody">
-            <div id="reviewCard">
+            <div id="reviewCard" class="oddCard">
                 <div id="RcardText" style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;">
                     <h4><i>
                         "I am delighted to see how my nation's daughters have contributed to technological advancement; I recognise many future leaders, entrepreneurs, and innovators. I'm here to talk about Kamyab Jawan, which is a fantastic resource for giving students access to high-tech skills like web design, mobile application development, artificial intelligence (AI), big data, high security, video production, and more on high-end scholarships. This is my vow to provide scholarships to this university's brilliant and worthy students. I find it quite impressive to see so many talented ladies working together. I'm happy I went to this university. Thank You."
@@ -93,13 +194,13 @@
                     </h2>
                 </div>
                 <div id="rcardImg">
-                    <img src="images/review1.jpg" style="height: 40vh;border: 4px solid #601472;">
+                    <img id="img1" src="images/review1.jpg">
                 </div>
             </div>
 
-            <div id="reviewCard">
+            <div id="reviewCard" class="evenCard">
                 <div id="rcardImg">
-                    <img src="images/review2.jpg" style="height: 50vh;width: 30vw;border: 4px solid #601472;">
+                    <img id="img2" src="images/review2.jpg">
                 </div>
                 <div id="RcardText" style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;">
                     <h4><i>
@@ -113,7 +214,7 @@
                 
             </div>   
             
-            <div id="reviewCard">
+            <div id="reviewCard" class="oddCard">
                 <div id="RcardText" style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;">
                     <h4><i>
                         "Such a pleasure to be the Chief Guest at JTECH 2020 at Jinnah University for Women. Checked out many of the Final Year Projects that the young women had worked on - a lot of emphasis on solutions for those with hearing difficulties, visual impairment and those suffering from autism. Agritech and Edtech solutions were also areas of focus."
@@ -123,13 +224,13 @@
                     </h2>
                 </div>
                 <div id="rcardImg">
-                    <img src="images/review3.jpg" style="height: 40vh;width: 30vw;border: 4px solid #601472;">
+                    <img id="img3" src="images/review3.jpg">
                 </div>
             </div>
 
-            <div id="reviewCard">
+            <div id="reviewCard" class="evenCard">
                 <div id="rcardImg">
-                    <img src="images/review4.jpg" style="height: 45vh;width: 30vw;border: 4px solid #601472;">
+                    <img id="img4" src="images/review4.jpg">
                 </div>
                 <div id="RcardText" >
                     <h4 style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;"><i>
@@ -139,20 +240,20 @@
                 
             </div>
 
-            <div id="reviewCard">
+            <div id="reviewCard" class="oddCard">
                 <div id="RcardText" >
                     <h4 style="border-bottom:2px solid #601472 ;border-left:2px solid #601472 ;"><i>
                         "Dr. Farrukh Iqbal, Executive Director of Institute of Business Administration, also graced the JTECH 2019 event with his presence and appreciated the talent and hardwork of the students."
                     </i></h4>
                 </div>
                 <div id="rcardImg">
-                    <img src="images/review5.JPG" style="height: 40vh;width: 30vw;border: 4px solid #601472;">
+                    <img id="img5" src="images/review5.JPG">
                 </div>
             </div>
 
-            <div id="reviewCard">
+            <div id="reviewCard"  class="evenCard">
                 <div id="rcardImg">
-                    <img src="images/review6.jpg" style="height: 45vh;width: 30vw;border: 4px solid #601472;">
+                    <img id="img6" src="images/review6.jpg">
                 </div>
                 <div id="RcardText" >
                     <h4 style="border-bottom:2px solid #601472 ;border-right:2px solid #601472 ;"><i>

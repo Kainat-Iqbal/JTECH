@@ -17,6 +17,9 @@
             flex-direction: column;
             font-family: 'Times New Roman', Times, serif;
             color: #256299;
+            @media (0<width<600px) {
+                height: auto;
+            }
         }
 
         #teamHeader {
@@ -26,6 +29,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
         }
 
         #teamHeader h1{
@@ -44,6 +50,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                width: 60vw;
+                margin-top: -8%;
+            }
         }
 
         #teamBody {
@@ -57,6 +67,10 @@
             margin-top: 5%;
             display: flex;
             flex-wrap: wrap;
+            @media (0<width<600px) {
+                flex-direction: column;
+                row-gap: 15vw;         
+            }
         }
         #Tcard{
             width: 20%;
@@ -65,6 +79,9 @@
         }
         #Tcard img{
             width: 100%;
+            @media (0<width<600px) {
+                width: 85vw;
+            }
         }
     </style>
 </head>
@@ -72,7 +89,6 @@
 <body>
     <div id="mainTeam">
         <div id="teamHeader">
-            <h1>OUR TEAM</h1>
         </div>
         <div id="ExecutiveTeamBox">
             <h2>Executive Team</h2>
@@ -103,7 +119,7 @@
                 <div id="Tcard">
                     <img src="images/qura.jpg" alt="qura">
                 </div> -->
-
+                <br><br>
             </div>
         </div>
     </div>

@@ -23,6 +23,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
         }
 		#aboutBox {
             width: 20vw;
@@ -35,7 +38,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                width: 40vw;
+                margin-top: -8%;
+            }
         }
+        
 		#aboutBody {
 			background-color:rgba(255, 255, 255, 0.658);
             margin-top: -2.5%;
@@ -99,6 +107,13 @@
   			padding-left:100px;
   			padding-right:100px;
   			color:white;
+            @media (0<width<600px) {
+                margin-top: 90vh;
+                flex-wrap: wrap;
+                padding-left: 4px;
+                padding-right: 4px;
+                height: 13vh;
+            }
 		}
 
 		.about-stat {
@@ -109,7 +124,11 @@
 		.stat-number {
   			font-size: 40px;
   			font-weight: bold;
-  			margin-right: 10px; 
+  			margin-right: 10px;
+            @media (0<width<600px) {
+                font-size: 1.2rem;
+                margin-right: 0px;
+            } 
 		}
 
 		.vertical-line {
@@ -117,10 +136,17 @@
   			height: 35px; 
   			background-color: white; 
   			margin: 0 10px; 
-		}
+            @media (0<width<600px) {
+                margin-left: -0.3vw;
+            }
+        }
 
 		.stat-description {
   			font-size: 40px;
+            @media (0<width<600px) {
+                font-size: 1.2rem;
+                margin-left: -0.9vw;
+            }
 		}
     </style>
 </head>
@@ -180,7 +206,7 @@
                   </div>
               </div>
               
-              <div class="about-section">
+              <div id="aboutBottom" class="about-section">
                     <div class="about-stat">
                       <span class="stat-number">17+</span>
                       <span class="vertical-line"></span>

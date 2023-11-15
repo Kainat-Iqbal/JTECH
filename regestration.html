@@ -13,7 +13,7 @@
     <style>
         #mainRegister {
             width: 100vw;
-            height: 100vh;
+            height: auto;
             background-image: url('images/mainBackground.jpg');
             background-position: center;
             background-repeat: no-repeat;
@@ -31,6 +31,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                height: 10vh;
+            }
         }
 
         #registerBox {
@@ -44,6 +47,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (0<width<600px) {
+                width: 45vw;
+                margin-top: -8%;
+            }
         }
 
         #registerBody {
@@ -57,24 +64,39 @@
 
         #registerForm{
             width: 40vw;
-            height: 75vh;
+            height: 81vh;
             background-color: #6041726e;
             display: flex;
             flex-direction: column;
+            @media (0<width<600px) {
+                width: 90vw;
+            }
         }
 
         #registerForm input{
             height: 7vh;
-            width: 35vw;
-            margin-left: 2.5vw;
             margin-top: 2vh;
             border: none;
         }
 
+        .inputField{
+            width: 35vw;
+            margin-left: 2.5vw;
+            @media (0<width<600px) {
+                width: 94%;
+            }
+        }
+
         #registerBtn{
             height: 7vh;
+            width: 15vw;
+            margin-left: 12vw;
             background-color: #601472;
             color: white;
+            @media (0<width<600px) {
+                width: 40vw;
+                margin-left: 25vw;
+            }
         }
 
     </style>
@@ -90,14 +112,15 @@
         <div id="registerBody">
             <div id="registerForm">
                 <form>
-                    <input placeholder="* Full Name"><br>
-                    <input placeholder="* CNIC"><br>
-                    <input placeholder="* Organization"><br>
-                    <input placeholder="* Designation"><br>
-                    <input placeholder="* Experience"><br>
-                    <input placeholder="* Email Adderss"><br>
-                    <input placeholder="* Contact Number">
-                    <input type="submit" value="Register" id="registerBtn" style="width: 15vw;margin-left: 12vw;">
+                    <input class="inputField" placeholder="* Full Name"><br>
+                    <input class="inputField" placeholder="* CNIC"><br>
+                    <input class="inputField" placeholder="* CNIC"><br>
+                    <input class="inputField" placeholder="* Organization"><br>
+                    <input class="inputField" placeholder="* Designation"><br>
+                    <input class="inputField" placeholder="* Experience"><br>
+                    <input class="inputField" placeholder="* Email Adderss"><br>
+                    <input class="inputField" placeholder="* Contact Number">
+                    <input type="submit" value="Register" id="registerBtn">
                 </form>
             </div>
         </div>
